@@ -112,7 +112,7 @@ rb4=Radiobutton(root,text='4)',variable=var,value=4)
 rb4.place(x=120,y=300)
 lab1=Label(root,text='Шкала очков (дневник или что там я хз)',height=3)
 lab1.place(x=25,y=640)
-but=Button(root,text='Ответить',height=3,width=15,command=aboba )
+but=Button(root,text='Ответить',height=3,width=15,command=aboba)
 but.place(x=880,y=640)
 root.mainloop()
 
