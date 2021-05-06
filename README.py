@@ -1,4 +1,5 @@
 from tkinter import*
+'''amogus'''
 def aboba ():
     global a
     if a==0:
@@ -115,3 +116,4 @@ lab1.place(x=25,y=640)
 but=Button(root,text='Ответить',height=3,width=15,command=aboba )
 but.place(x=880,y=640)
 root.mainloop()
+
