@@ -1,5 +1,4 @@
 from tkinter import*
-'''amogus'''
 def aboba ():
     global a
     if a==0:
