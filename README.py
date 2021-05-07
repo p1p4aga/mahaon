@@ -1,4 +1,5 @@
 from tkinter import*
+prav=0
 def aboba ():
     global prav
     global a
@@ -8,8 +9,7 @@ def aboba ():
         rb2['text']=answer3[1]
         rb3['text']=answer3[2]
         rb4['text']=answer3[3]
-        prav=0
-    if a==1:
+    elif a==1:
         lab['text']=question3[1]
         rb1['text']=answer3[4]
         rb2['text']=answer3[5]
@@ -17,7 +17,7 @@ def aboba ():
         rb4['text']=answer3[7]
         if var.get()==3:
             prav=prav+1
-    if a==2:
+    elif a==2:
         lab['text']=question3[2]
         rb1['text']=answer3[8]
         rb2['text']=answer3[9]
@@ -25,7 +25,7 @@ def aboba ():
         rb4['text']=answer3[11]
         if var.get()==4:
             prav=prav+1
-    if a==3:
+    elif a==3:
         lab['text']=question3[3]
         rb1['text']=answer3[12]
         rb2['text']=answer3[13]
@@ -33,9 +33,17 @@ def aboba ():
         rb4['text']=answer3[15]
         if var.get()==1:
             prav=prav+1
-    if var.get()==2:
+    else:
+        if var.get()==2:
             prav=prav+1
-    print(prav)
+        if prav==4:
+            lab1['text']=str('ОБЖ : 5')
+        elif prav==3:
+            lab1['text']=str('ОБЖ : 4')
+        elif prav==2:
+            lab1['text']=str('ОБЖ : 3')
+        else:
+            lab1['text']=str('ОБЖ : 2')
     a+=1
 a=0
 question1=[]
